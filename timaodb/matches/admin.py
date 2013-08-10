@@ -10,7 +10,5 @@ admin.site.register(Match, MatchAdmin)
 
 
 class TeamAdmin(admin.ModelAdmin):
-    list_display = ('name', 'image', 'image_tag')
-    readonly_fields = ('image_tag',)
-
+    list_display = ('name', 'image')
 admin.site.register(Team, TeamAdmin)
